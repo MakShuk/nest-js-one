@@ -8,7 +8,9 @@ export class TopPageController {
 	constructor(private readonly configService: ConfigService) {}
 	@Post('create')
 	// eslint-disable-next-line @typescript-eslint/no-empty-function
-	async create(@Body() dto: Omit<TopPageModule, '_id'>): Promise<any> {}
+	async create(@Body() dto: Omit<TopPageModule, '_id'>): Promise<any> {
+		return { lof: 'hgfh' };
+	}
 
 	@Get('id')
 	// eslint-disable-next-line @typescript-eslint/no-empty-function
